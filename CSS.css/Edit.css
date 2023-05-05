@@ -1,0 +1,111 @@
+.card {
+   --background: linear-gradient(to left, #00eeff 0%, #000000 100%);
+   width: 130px;
+   height: 130px;
+   padding: 5px;
+   border-radius: 1rem;
+   overflow: visible;
+   background: #2bedf7;
+   background: var(--background);
+   position: relative;
+   z-index: 1;
+  }
+  
+  .card::after {
+   position: absolute;
+   content: "";
+   top: 30px;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+   transform: scale(0.8);
+   filter: blur(25px);
+   background: #0dedf5;
+   background: var(--background);
+   transition: opacity .5s;
+  }
+  
+  .card-info {
+   --color: #181818;
+   background: var(--color);
+   color: var(--color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   overflow: visible;
+   border-radius: .7rem;
+  }
+  
+  .card .title {
+   font-weight: bold;
+   letter-spacing: .1em;
+  }
+  
+  /*Hover*/
+  .card:hover::after {
+   opacity: 0;
+  }
+  
+  .card:hover .card-info {
+   color: #11c8ec;
+   transition: color 1s;
+  }
+  
+.qua1 {
+   position:absolute;
+   top: 25vh;
+   left: 35vh;
+   z-index: 1;
+  }
+
+.qua2 {
+   position:absolute;
+   top: 25vh;
+   left: 115vh;
+   z-index: 2;
+}
+.qua3 {
+   position:absolute;
+   top: 25vh;
+   left: 75vh;
+   z-index: 3;
+}
+.qua4 {
+   position:absolute;
+   top: 25vh;
+   left: 155vh;
+   z-index: 4;
+}
+.qua5 {
+   position: absolute;
+   top:57vh;
+   left: 35vh;
+   z-index: 5;
+}
+.qua6 {
+   position: absolute;
+   top:57vh;
+   left:75vh;
+   z-index: 6;
+}
+.qua7 {
+   position: absolute;
+   top:57vh;
+   left:115vh;
+   z-index: 7;
+}
+.qua8 {
+   position: absolute;
+   top:57vh;
+   left:155vh;
+   z-index: 8;
+}
+p {
+   position: absolute;
+   color: rgb(255, 255, 255);
+   font-size: 80px;
+}
