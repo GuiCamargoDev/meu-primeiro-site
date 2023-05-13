@@ -1,3 +1,7 @@
+body {
+   background: #181818c5;
+}
+
 .card {
    --background: linear-gradient(to left, #00eeff 0%, #000000 100%);
    width: 130px;
